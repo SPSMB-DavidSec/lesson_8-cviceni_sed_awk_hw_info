@@ -17,7 +17,7 @@ get_ram {
 }
 
 cpu_usage=$get_cpu_usage
-free_ram=${get_ram | awk 1}
+free_ram=${get_ram | awk `{print $2}`}
 
 ```
 
