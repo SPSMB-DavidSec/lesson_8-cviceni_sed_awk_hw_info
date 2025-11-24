@@ -1,6 +1,25 @@
 # Zadání – Získávání systémových informací v Bash pomocí sed a awk
 
 Vaším úkolem je vytvořit bash skript, který získá základní informace o systému pomocí standardních Linux příkazů a zpracuje jejich výstup pomocí **sed** a **awk**.
+V kodu vhodně vytvořte funkce tak, aby jste mohli snadno získávat každou hodnotu dle zadání. Ne nutně však musí mít každá hodnota svou vlastní metodu viz ukázka níže.
+```bash
+#funkce k získání vytížení CPU
+get_cpu_usage {
+# todo
+}
+
+#funkce pro výpis RAM paměti
+# 1. sloupec total;
+# 2. sloupec free;
+# 3. sloupec used
+get_ram {
+# todo 
+}
+
+cpu_usage=$get_cpu_usage
+free_ram=${get_ram | awk 1}
+
+```
 
 ---
 
